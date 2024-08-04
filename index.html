@@ -3,50 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food, LLC</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Food, LLC Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-header">
-            <span class="navbar-brand">Food, LLC</span>
-            <button class="navbar-toggle" onclick="toggleMenu()">&#9776;</button>
-        </div>
-        <ul class="navbar-menu" id="navbarMenu">
+        <div class="navbar-brand">Food, LLC</div>
+        <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="navbar-menu" id="navbar-menu">
             <li><a href="#chicken">Chicken</a></li>
             <li><a href="#beef">Beef</a></li>
             <li><a href="#sushi">Sushi</a></li>
         </ul>
     </nav>
-
     <header class="header">
-        <h1>Our Menu</h1>
+        <h1 id="top">Our Menu</h1>
     </header>
-
     <div class="content">
         <section id="chicken">
             <h3>Chicken</h3>
-            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Chicken">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <a href="#top">Back to Top</a>
+            <img src="https://via.placeholder.com/400x300?text=Chicken" alt="Chicken">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <p><a href="#top">Back to Top</a></p>
         </section>
         <section id="beef">
             <h3>Beef</h3>
-            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb22" alt="Beef">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <a href="#top">Back to Top</a>
+            <img src="https://via.placeholder.com/400x300?text=Beef" alt="Beef">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <p><a href="#top">Back to Top</a></p>
         </section>
         <section id="sushi">
             <h3>Sushi</h3>
-            <img src="https://images.unsplash.com/photo-1570819485061-1076840f1d53" alt="Sushi">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <a href="#top">Back to Top</a>
+            <img src="https://via.placeholder.com/400x300?text=Sushi" alt="Sushi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <p><a href="#top">Back to Top</a></p>
         </section>
     </div>
 
     <script>
         function toggleMenu() {
-            var menu = document.getElementById('navbarMenu');
+            var menu = document.getElementById('navbar-menu');
             if (menu.style.display === 'block') {
                 menu.style.display = 'none';
             } else {
