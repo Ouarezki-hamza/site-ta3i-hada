@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 a {
@@ -78,14 +79,16 @@ header {
 .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Center content */
 }
 
 .content section {
     flex: 1 1 100%;
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
     background-color: #ecf0f1;
     border-radius: 8px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .content h3 {
@@ -97,8 +100,10 @@ header {
 .content img {
     display: block;
     margin: 0 auto 20px;
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure image scales with its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 /* Responsive Styles */
@@ -113,14 +118,14 @@ header {
 
     .content section {
         flex: 1 1 45%;
-        margin: 10px 2.5%;
+        margin: 15px;
     }
 }
 
 @media (min-width: 992px) {
     .content section {
         flex: 1 1 30%;
-        margin: 10px 1.666%;
+        margin: 15px;
     }
 }
 
