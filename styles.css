@@ -1,0 +1,13 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.menu-section {
+    height: 1000px;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
